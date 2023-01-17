@@ -7,7 +7,7 @@
 
 <div class="card-body">
     <form method="POST">
-        {% csrf_token %}
+        {% csrf_protect %}
         {{ form.as_p }}
         <input class="button" type="submit" value="Login">
     </form>

@@ -7,7 +7,7 @@
 
 <div class="card-body">
     <form method="POST">
-        {% csrf_token %}
+        {% csrf_protect %}
         <p>Are you sure you want to delete this task? "{{ task }}"</p>
         <input class="button" type="submit" value="Delete">
     </form>
